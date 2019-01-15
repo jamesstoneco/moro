@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier-standard 'lib/**/*.js'",
     "precommit": "lint-staged",
-    "test": "cross-env MORO_TEST_MODE='true' ava && bats tests/end-to-end/moro.tests.bats",
+    "test": "cross-env MORO_TEST_MODE='true' && ava && bats tests/end-to-end/moro.tests.bats",
     "contributor:add": "all-contributors add",
     "contributor:generate": "all-contributors generate",
     "postinstall": "opencollective postinstall"
@@ -45,9 +45,9 @@
   "homepage": "https://github.com/omidfi/moro#readme",
   "dependencies": {
     "bluebird": "3.5.1",
-    "caporal": "0.10.0",
+    "caporal": "1.1.0",
     "chalk": "2.4.1",
-    "cli-table2": "0.2.0",
+    "cli-table3": "0.5.1",
     "expand-home-dir": "0.0.3",
     "fs-extra": "6.0.1",
     "jsonfile": "4.0.0",
@@ -62,13 +62,13 @@
     "update-notifier": "2.5.0"
   },
   "devDependencies": {
-    "prettier-standard": "8.0.1",
-    "husky": "0.14.3",
     "all-contributors-cli": "4.11.1",
     "ava": "0.25.0",
     "bats": "0.4.2",
     "bats-assert": "1.1.1",
-    "cross-env": "5.1.5"
+    "cross-env": "5.1.5",
+    "husky": "0.14.3",
+    "prettier-standard": "8.0.1"
   },
   "lint-staged": {
     "bin/**/*.js": [

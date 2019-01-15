@@ -1,7 +1,7 @@
 #!/usr/bin/env bats
 # Check bats testing framework for testing bash apps
 
-load ../../node_modules/bats-assert/all
+load '../../node_modules/bats-assert/all'
 
 # set test mode, to protect the actual database
 export MORO_TEST_MODE='true'
